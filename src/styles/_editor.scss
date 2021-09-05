@@ -1,0 +1,129 @@
+.Editor {
+  grid-column: navbar-start / navbar-end;
+  padding: 1rem;
+}
+
+.editor-inner {
+  border-radius: 15px;
+  background-color: white;
+  height: 100%;
+  padding: 0.5rem;
+
+  textarea {
+    width: 100%;
+    // height: 100%;
+    outline: none;
+    border: none;
+    background: transparent;
+    margin-top: 0.5rem;
+    height: calc(100% - 13.5rem);
+    white-space: pre-line;
+    &::-webkit-scrollbar {
+      width: 5px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: #0364ff;
+      border-radius: 5px;
+    }
+  }
+}
+.DropdownFont {
+  display: inline-block;
+}
+.dropdown-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.center-text {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+input.title-input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid black;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 0 0.2rem;
+}
+.center-text {
+  display: none;
+}
+
+.add-image {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  height: 10rem;
+  width: 100%;
+
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    .intial-text {
+      color: white;
+    }
+    .center-text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 19;
+      display: flex;
+      background-color: #0364ff;
+      padding: 0.4rem 0.8rem;
+      border-radius: 30px;
+      color: white;
+    }
+  }
+}
+button.save {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 16px -5px black;
+  transition: all 0.2s ease;
+
+  svg {
+    margin-left: 10px;
+  }
+}
+.bg-blue {
+  background-color: #0364ff;
+}
+.bg-green {
+  background-color: #38a3a5;
+}
+.bottom-container {
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  display: flex;
+  gap: 1rem;
+}

@@ -1,0 +1,11 @@
+.dashboard {
+  background-color: #f4f5f7;
+  display: grid;
+  grid-template-columns:
+    [sidebar-start] minmax(13rem, 0.3fr) [sidebar-end navbar-start] minmax(
+      4rem,
+      1fr
+    )
+    [navbar-end];
+  grid-template-rows: 3.5rem calc(100vh - 3.5rem);
+}
